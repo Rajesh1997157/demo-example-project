@@ -1,0 +1,180 @@
+How to sort a list of students on the basis of their First name? in java 
+
+=====================================================================================================================================================================
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+class Student {
+    private String firstName;
+    private String lastName;
+
+    // Constructor
+    public Student(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    // Getters
+    public String getFirstName() {
+        return firstName;    sorter.compartor(
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" + "firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + '}';
+    }
+}
+
+public class SortStudents {
+    public static void main(String[] args) {
+        List<Student> students = new ArrayList<>();
+        students.add(new Student("Alice", "Smith"));
+        students.add(new Student("Bob", "Brown"));
+        students.add(new Student("Charlie", "Davis"));
+
+        // Sorting using Comparator with lambda
+        Collections.sort(students, (s1, s2) -> s1.getFirstName().compareTo(s2.getFirstName()));
+
+        // OR use Comparator.comparing
+        // students.sort(Comparator.comparing(Student::getFirstName));
+
+        // Printing sorted list
+        students.forEach(System.out::println);
+    }
+}
+
+collection.sort(Comarator.comparing(Student::getFirstName));
+student.forEach(System.out::println);
+output
+-------------------------
+Student{firstName='Alice', lastName='Smith'}
+Student{firstName='Bob', lastName='Brown'}
+Student{firstName='Charlie', lastName='Davis'}
+==================================================================================================
+
+
+
+Write a program to return the length of the longest word from a string whose length is even?
+
+===================================================================================================
+
+public class Main {
+    public static void main(String[] args) {
+        String input = "Java javaword programming is fun and educational";
+        int max = 0;
+        for (String word : input.split("\\s+")) {//input.split("\\s+"): Splits the string into words.
+
+            if (word.length() % 2 == 0) {//word.length() % 2 == 0: Checks if the word length is even.
+                max = Math.max(max, word.length());//word.length() % 2 == 0: Checks if the word length is even.
+
+            }
+        }
+        System.out.println("Longest even-length word length: " + max);
+    }
+}
+
+
+output
+-------
+Longest t even-length word length: 8
+
+
+======================================================================================================================
+Merging two array and sorting
+
+
+
+import java.util.Arrays;
+
+   class MergeAndSortArrays
+{
+    public static void main(String[] args) {
+        // Step 1: Define two arrays
+        int[] array1 = {5, 2, 8, 1};
+        int[] array2 = {3, 7, 6, 4};
+
+        // Step 2: Create a new array to hold the merged result
+        int[.d] mergedArray = new int[array1.length + array2.length];
+
+        // Step 3: Copy elements from both arrays into the new merged array
+        System.arraycopy(array1, 0, mergedArray, 0, array1.length);
+        System.arraycopy(array2, 0, mergedArray, array1.length, array2.length);
+
+        // Step 4: Sort the merged array
+        Arrays.sort(mergedArray);
+
+        // Step 5: Print the sorted merged array
+         System.out.println("Merged and Sorted Array: " + Arrays.toString(mergedArray));
+    }
+}
+
+
+============================================================================
+
+My name is Tejavath Mohan Naik, and I have completed my Bachelor of Technology (B.Tech) from JNTUH University. I have three 3.5 yeasr  of experience in the IT industry, and I am currently employed at Virtusa Consultancy Private Limited.
+
+I have a strong technical background with expertise in Core Java, Spring Boot, Microservices, and MySQL. Recently, I worked on the BNYM (Bank of New York Mellon)  RevDau project in the credit card module. In this project, I was responsible for developing and maintaining an API that handled system-generated bills, payment processing, and sending reminders to users. This solution significantly improved the system's efficiency.
+
+We are using Java 8 for development, 
+spring boot 3.3.6 and I write test cases using Jira for issue tracking. For version control, we use Git.
+
+ thank you 
+
+
+
+
+Project Overview
+The RevDau project enhanced the credit card module by automating bill generation, payment processing, and user reminders for efficient financial operations.
+
+Technology Stack
+
+Java 8, Spring Boot 3.3.6
+MySQL for database
+Git for version control, Jira for issue tracking
+Project Flow
+API Development
+
+Designed REST APIs using Spring Boot for billing, payments, and reminders.
+Utilized Java 8 features like Lambda and Stream API for optimized logic.
+Bill Generation
+
+Scheduled Spring Task Scheduler to calculate bills based on transactions from MySQL.
+Payment Processing
+
+APIs securely processed payments and handled errors with Spring Exception Handling.
+Reminders
+
+Used Spring Batch for scheduled reminders sent via notification APIs.
+Testing & Deployment
+
+Verified logic with JUnit 5 and used Postman for integration testing.
+Managed source code via Git and tracked issues in Jira
+
+
+
+
+
+
+class Mohan{
+  main// method
+
+public static void main (String[]args){
+  
+int []=arra1={0,1,2,3,4};
+int []=arra2={0,1,2,3,4};
+
+int[] meregArray=new int[array1.length+array2.length);
+
+System.arraycopy(arra1, 0, meregArray, 0, array2.length);
+System.arraycopy(arra2, 0, meregArray, 0, array1.length);
+
+
+Arrays.sort(meregArray);
+
+System.out.println("Merged and sorted Arrays :"+Arrays.toString(meregArra));
