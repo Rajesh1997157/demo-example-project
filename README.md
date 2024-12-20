@@ -15,3 +15,6 @@ INSET INTO student VALUES
 (04, "chandu", 28, 99);
 
 SELECT * FROM student;
+
+SHOW TABELS;
+SHOW DATABASES;
